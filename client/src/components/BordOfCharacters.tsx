@@ -14,11 +14,11 @@ const BordOfCharacters: React.FC = () => {
 
     if(loading) {
         return(
-            <div>
+            <div className="itemWithDownload">
                 <div className="ImgDiv">
                     <img src="https://img2.goodfon.ru/wallpaper/nbig/b/50/rik-i-morti-multik-rick-and.jpg" alt="" style={{width: '100%', height: '100%'}} />
                 </div>
-                <h1 style={{color: 'rgb(26, 255, 0)'}}>Download in progress...</h1>
+                <h1>Download in progress...</h1>
             </div>
         )
     };
@@ -29,8 +29,10 @@ const BordOfCharacters: React.FC = () => {
 
     return(
         <div>
-            <div className="ImgDiv" >
-                <img src="https://img2.goodfon.ru/wallpaper/nbig/b/50/rik-i-morti-multik-rick-and.jpg" alt="..." style={{width: '100%', height: '100%'}} />
+            <div className="itemWithDownload">
+                <div className="ImgDiv">
+                    <img src="https://img2.goodfon.ru/wallpaper/nbig/b/50/rik-i-morti-multik-rick-and.jpg" alt="" style={{width: '100%', height: '100%'}} />
+                </div>
             </div>
             <div className="Bord">
                 {characters.map(elem => <CardForCharacter key={elem.id} props={elem}/>)}

@@ -13,7 +13,13 @@ body {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
-
+.itemWithDownload {
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: -15px;
+  color: rgb(112, 255, 96);
+  background-color: rgb(19, 20, 62);
+}
 .pDead,
 .pAlive,
 .pUnknown {
@@ -23,7 +29,6 @@ body {
   height: 10px;
   margin: 0 7px 0 0;
   padding: 0%;
-  
 }
 .pAlive {
   background-color: greenyellow;
@@ -46,13 +51,13 @@ strong {
   color: rgb(147, 145, 145);
 }
 .pFlex {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 .ImgDiv {
   width: auto;
