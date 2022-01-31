@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/TheRickAndMorty.git/static/css/main.e9f146d1.css",
-    "main.js": "/TheRickAndMorty.git/static/js/main.366f47a3.js",
-    "index.html": "/TheRickAndMorty.git/index.html",
-    "main.e9f146d1.css.map": "/TheRickAndMorty.git/static/css/main.e9f146d1.css.map",
-    "main.366f47a3.js.map": "/TheRickAndMorty.git/static/js/main.366f47a3.js.map"
+    "main.css": "/TheRickAndMorty/static/css/main.e9f146d1.css",
+    "main.js": "/TheRickAndMorty/static/js/main.366f47a3.js",
+    "index.html": "/TheRickAndMorty/index.html",
+    "main.e9f146d1.css.map": "/TheRickAndMorty/static/css/main.e9f146d1.css.map",
+    "main.366f47a3.js.map": "/TheRickAndMorty/static/js/main.366f47a3.js.map"
   },
   "entrypoints": [
     "static/css/main.e9f146d1.css",
