@@ -6,11 +6,9 @@ export const fetchCharacters = ( page = 1) => {
     return async (dispatch: Dispatch<CharactersAction>) => {
         try {
             dispatch({type: CharactersActionTypes.FETCH_CHARACTERS})
-            const response = await axios.get('https://rickandmortyapi.com/api/character', {
-                params: {_page: page}
-            })
+            const response = await axios.get(`https://rickandmortyapi.com/api/character?page=${page}`)
             setTimeout(() => {
-                dispatch({type: CharactersActionTypes.FETCH_CHARACTERS_SUCCESS, payload: response.data})
+                dispatch({type: CharactersActionTypes.FETCH_CHARACTERS_SUCCESS, payload: response.data.results})
             }, 2000)
         } catch (e) {
             dispatch({
@@ -18,5 +16,10 @@ export const fetchCharacters = ( page = 1) => {
                 payload: 'An error occurred while retrieving data from the server!'
             })
         }
+    }
+}
+export function setCharactersPage(page: number): CharactersAction {
+    return {
+        type: CharactersActionTypes.SET_CHARACTERS_PAGE, payload: page
     }
 }
