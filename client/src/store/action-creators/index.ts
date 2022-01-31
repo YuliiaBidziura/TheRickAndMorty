@@ -1,5 +1,5 @@
-import * as CharactersActionCreators from './characters';
+import * as CharactersActionCreators from "./characters";
 
 export default {
     ...CharactersActionCreators
-}
+};

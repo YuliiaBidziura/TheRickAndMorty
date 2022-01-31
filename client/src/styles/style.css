@@ -1,42 +1,172 @@
-body{
-    background: -webkit-linear-gradient(180deg, rgb(19, 20, 62), rgb(0, 0, 0));
-    background: -moz-linear-gradient(180deg, rgb(19, 20, 62), rgb(0, 0, 0));
-    background: linear-gradient(180deg, rgb(19, 20, 62), rgb(0, 0, 0));
+body {
+  background: -webkit-linear-gradient(180deg, rgb(19, 20, 62), rgb(0, 0, 0));
+  background: -moz-linear-gradient(180deg, rgb(19, 20, 62), rgb(0, 0, 0));
+  background: linear-gradient(180deg, rgb(19, 20, 62), rgb(0, 0, 0));
+  margin: 0%;
 }
-
 .CardForCharacters {
-    display: flex;
+  display: flex;
+}
+.card-img-top {
+  width: 249px;
+  height: 249px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
-.card-img-top {
+.pDead,
+.pAlive,
+.pUnknown {
+  background-color: red;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 7px 0 0;
+  padding: 0%;
+  
+}
+.pAlive {
+  background-color: greenyellow;
+}
+.pUnknown {
+  background-color: rgb(186, 186, 186);
+}
+.card-text {
+  padding-top: 10px;
+}
+.Bord {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+}
+strong {
+  color: rgb(147, 145, 145);
+}
+.pFlex {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ImgDiv {
+  width: auto;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 3px solid #fff;
+}
+.placeOfCards {
+  margin-top: 15px;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  color: rgb(112, 255, 96);
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    height: 210px;
+    border: 1px solid rgb(32, 32, 32);
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(83, 83, 83);
+    margin-bottom: 20px;
+    margin-top: 25px;
+    -webkit-box-shadow: 6px 3px 11px -3px rgba(34, 60, 80, 0.16);
+    -moz-box-shadow: 6px 3px 11px -3px rgba(34, 60, 80, 0.16);
+    box-shadow: 6px 3px 11px -3px rgba(34, 60, 80, 0.16);
+  }
+  .ImgDiv {
+    width: auto;
+    height: 210px;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid #fff;
+  }
+  .card-img-top {
+    width: 149px;
+    height: 209px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .placeOfCards {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 450px;
+    height: 250px;
+    border: 1px solid rgb(32, 32, 32);
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(83, 83, 83);
+    margin-bottom: 20px;
+    margin-top: 25px;
+    box-shadow: 6px 3px 11px -3px rgb(34 60 80 / 16%);
+  }
+  .card-img-top {
     width: 249px;
     height: 249px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-}
-.pDead, .pAlive, .pUnknown {
+  }
+  .pDead,
+  .pAlive,
+  .pUnknown {
     background-color: red;
     border-radius: 50%;
     width: 10px;
     height: 10px;
-}
-.pAlive {
+  }
+  .pAlive {
     background-color: greenyellow;
-}
-.pUnknown{
+  }
+  .pUnknown {
     background-color: rgb(186, 186, 186);
-}
-.Bord {
+  }
+  .Bord {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-around;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-}
-.ImgDiv {
+  }
+  .ImgDiv {
     width: auto;
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -44,118 +174,8 @@ body{
     justify-content: space-around;
     align-items: center;
     border-bottom: 3px solid #fff;
-}
-.placeOfCards {
+  }
+  .placeOfCards {
     margin-top: 15px;
-}
-.pagination {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    color: rgb(112, 255, 96);
-    text-align: center;
-}
-@media only screen and (max-width: 500px) {
-    .cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: space-around;
-        align-items: center;
-        width: 350px;
-        height: 210px;
-        border: 1px solid rgb(32, 32, 32);
-        border-radius: 15px;
-        color: white;
-        background-color: rgb(83, 83, 83);
-        margin-bottom: 20px;
-        margin-top: 25px;
-        -webkit-box-shadow: 6px 3px 11px -3px rgba(34, 60, 80, 0.16);
-        -moz-box-shadow: 6px 3px 11px -3px rgba(34, 60, 80, 0.16);
-        box-shadow: 6px 3px 11px -3px rgba(34, 60, 80, 0.16);
-    }
-    .ImgDiv {
-        width: auto;
-        height: 210px;
-        align-content: center;
-        justify-content: space-around;
-        align-items: center;
-        border-bottom: 3px solid #fff;
-    }
-    .card-img-top {
-        width: 149px;
-        height: 209px;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-    }
-    .placeOfCards {
-        margin-top: 5px;
-    }
-}
-@media only screen and (min-width: 1080px) {
-    .cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: space-around;
-        align-items: center;
-        width: 450px;
-        height: 250px;
-        border: 1px solid rgb(32, 32, 32);
-        border-radius: 15px;
-        color: white;
-        background-color: rgb(83, 83, 83);
-        margin-bottom: 20px;
-        margin-top: 25px;
-        -webkit-box-shadow: 6px 3px 11px -3px rgba(34, 60, 80, 0.16);
-        -moz-box-shadow: 6px 3px 11px -3px rgba(34, 60, 80, 0.16);
-        box-shadow: 6px 3px 11px -3px rgba(34, 60, 80, 0.16);
-    }
-    
-    .card-img-top {
-        width: 249px;
-        height: 249px;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-    }
-    .pDead, .pAlive, .pUnknown {
-        background-color: red;
-        border-radius: 50%;
-        width: 10px;
-        height: 10px;
-    }
-    .pAlive {
-        background-color: greenyellow;
-    }
-    .pUnknown{
-        background-color: rgb(186, 186, 186);
-    }
-    .Bord {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: space-around;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .ImgDiv {
-        width: auto;
-        height: 500px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: space-around;
-        align-items: center;
-        border-bottom: 3px solid #fff;
-        
-    }
-    .placeOfCards {
-        margin-top: 15px;
-    }
+  }
 }

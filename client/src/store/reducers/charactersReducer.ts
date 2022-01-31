@@ -1,11 +1,11 @@
-import { CharactersState, CharactersActionTypes, CharactersAction } from '../../types/Characters';
+import { CharactersState, CharactersActionTypes, CharactersAction } from "../../types/Characters";
 
 const initialState: CharactersState = {
     characters: [],
     error: null,
     page: 1,
     loading: false
-}
+};
 
 export const charactersReducer = (state = initialState, action: CharactersAction ): CharactersState => {
     switch(action.type) {
@@ -20,4 +20,4 @@ export const charactersReducer = (state = initialState, action: CharactersAction
         default: 
             return state;
     };
-}
+};
